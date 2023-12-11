@@ -14,3 +14,11 @@ When('I fill login form with valid credentioals', async function () {
 Then('I should see the Inventory page', async function () {
   await page.assertUserIsLoggedIn('inventory.html')
 })
+
+defineStep(/^I fill the login form with "([^"]*)" and "([^"]*)"$/, async function (username, password) {
+  await page.submitLoginForm(username, password)
+})
+
+defineStep('I wait for 3 seconds', async function () {
+  await page.pause()
+})

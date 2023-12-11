@@ -19,6 +19,10 @@ class LoginPage {
     const currentUrl = await page.url()
     await expect(currentUrl).to.equal(this.url + partOfUrl)
   }
+
+  async pause() {
+    await page.waitForTimeout(3000)
+  }
 }
 
 module.exports = { LoginPage }
