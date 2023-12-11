@@ -12,5 +12,5 @@ When('I fill login form with valid credentioals', async function () {
 })
 
 Then('I should see the Inventory page', async function () {
-  await page.assertUserIsLoggedIn()
+  await page.assertUserIsLoggedIn('inventory.html')
 })

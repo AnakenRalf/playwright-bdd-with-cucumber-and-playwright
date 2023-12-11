@@ -15,9 +15,9 @@ class LoginPage {
     await page.click(this.loginButton)
   }
 
-  async assertUserIsLoggedIn() {
+  async assertUserIsLoggedIn(partOfUrl) {
     const currentUrl = await page.url()
-    await expect(currentUrl).to.equal(this.url + 'inventory.html')
+    await expect(currentUrl).to.equal(this.url + partOfUrl)
   }
 }
 

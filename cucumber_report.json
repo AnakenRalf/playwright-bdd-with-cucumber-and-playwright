@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 202765599
+              "duration": 199654099
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 667642199
+              "duration": 1021064800
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 193002900
+              "duration": 177687400
             }
           },
           {
@@ -52,8 +52,9 @@
               "location": "step-definitions\\login-step.js:14"
             },
             "result": {
-              "status": "passed",
-              "duration": 1502299
+              "status": "failed",
+              "duration": 2405900,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -https://www.saucedemo.com/inventory.html\n    +https://www.saucedemo.com/inventory.html1\n\n    at LoginPage.assertUserIsLoggedIn (D:\\work\\automation-testing\\playwright\\playwright-cucumber\\page-objects\\Login-Page.js:20:33)\n    at async World.<anonymous> (D:\\work\\automation-testing\\playwright\\playwright-cucumber\\step-definitions\\login-step.js:15:3)"
             }
           },
           {
@@ -61,7 +62,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 73443799
+              "duration": 41829700
             }
           }
         ],
